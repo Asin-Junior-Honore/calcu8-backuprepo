@@ -67,7 +67,7 @@ const Dashboard = () => {
             <input
               type="text"
               placeholder="Search examinations"
-              className="w-full rounded-2xl text-black py-3 pl-10 pr-4 placeholder-custom"
+              className="w-full rounded-2xl bg-white text-black py-3 pl-10 pr-4 placeholder-custom"
             />
           </div>
         </div>
