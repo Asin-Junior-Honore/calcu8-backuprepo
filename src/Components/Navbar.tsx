@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { BsFillCaretDownFill, BsList } from "react-icons/bs";
-
+import logo from "../assets/calcula8logo.svg";
+import userImage from "../assets/userimage.svg";
 const Navbar = () => {
   const [showUserDropdown, setShowUserDropdown] = useState(false);
   const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -20,11 +21,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-4">
-            <img
-              src="/src/assets/calcula8_logo.svg"
-              alt="Logo"
-              className="h-auto w-12"
-            />
+            <img src={logo} alt="Logo" className="h-auto w-12" />
           </div>
 
           {/* Navigation Links */}
@@ -72,7 +69,7 @@ const Navbar = () => {
                 className="flex items-center text-white focus:outline-none"
                 onClick={toggleUserDropdown}
               >
-                <img src="/src/assets/userimage.svg" alt="User Profile" />
+                <img src={userImage} alt="User Profile" />
                 <BsFillCaretDownFill className="ml-1" />
               </button>
 

@@ -1,4 +1,7 @@
 import { BsSearch } from "react-icons/bs";
+import solorcloud from "../../assets/solarcloudlineduotone.svg";
+import ambassador from "../../assets/freetrialambassador.svg";
+import graph from "../../assets/graphcharthistories.svg";
 
 const Dashboard = () => {
   type Exam = {
@@ -10,32 +13,32 @@ const Dashboard = () => {
   const examData: Exam[] = [
     {
       id: 1,
-      imgSrc: "/src/assets/Frame gce-logo.svg",
+      imgSrc: "/src/assets/gcelogo.svg",
       title: "wassce/gce",
     },
     {
       id: 2,
-      imgSrc: "/src/assets/Frame-jamb-logo.svg",
+      imgSrc: "/src/assets/jamblogo.svg",
       title: "jamb",
     },
     {
       id: 3,
-      imgSrc: "/src/assets/Frame-postutme-logo.svg",
+      imgSrc: "/src/assets/postutmelogo.svg",
       title: "post utme",
     },
     {
       id: 4,
-      imgSrc: "/src/assets/Frame-neco-logo.svg",
+      imgSrc: "/src/assets/necologo.svg",
       title: "neco",
     },
     {
       id: 5,
-      imgSrc: "/src/assets/Frame-nabteb-logo.svg",
+      imgSrc: "/src/assets/nabteblogo.svg",
       title: "nabteb",
     },
     {
       id: 6,
-      imgSrc: "/src/assets/Frame gce-logo.svg",
+      imgSrc: "/src/assets/juniorwaeclogo.svg",
       title: "bece (Junior waec)",
     },
   ];
@@ -46,11 +49,7 @@ const Dashboard = () => {
           Morning,{" "}
           <span className="font-semibold block">
             Mufteey Aleeyu{" "}
-            <img
-              src="/src/assets/solar_cloud-line-duotone.svg"
-              className="inline-block"
-              alt="cloud"
-            />
+            <img src={solorcloud} className="inline-block" alt="cloud" />
           </span>
         </h2>
 
@@ -85,21 +84,13 @@ const Dashboard = () => {
           </div>
 
           <div className="lg:w-[35rem] w-full lg:relative -z-[5] absolute lg:left-0 left-[35px] top-0">
-            <img
-              src="/src/assets/freetrial_ambassador.svg"
-              className="h-full w-full"
-              alt=""
-            />
+            <img src={ambassador} className="h-full w-full" alt="" />
           </div>
         </section>
 
         <section className="flex flex-col items-center mt-14 py-12 Histories-scores relative ">
           <div>
-            <img
-              src="/src/assets/graph-chart-histories.svg"
-              className="h-full w-full"
-              alt=""
-            />
+            <img src={graph} className="h-full w-full" alt="" />
           </div>
 
           <div>

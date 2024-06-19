@@ -49,7 +49,7 @@ body {
 }
 
 .africanart::before {
-  background-image: url("./assets/AfricanArtbg.svg");
+  background-image: url("./assets/africanartbg.svg");
   background-color: var(--secondary-bg-color);
 }
 
@@ -59,17 +59,17 @@ body {
 }
 
 .africanart_freetrial::before {
-  background-image: url("./assets/african_art_free_triel.svg");
+  background-image: url("./assets/africanartfreetrial.svg");
   background-color: var(--tertiary-bg-color);
 }
 
 .Histories-scores::before {
-  background-image: url("./assets/african_art_free_triel.svg");
+  background-image: url("./assets/africanartfreetrial.svg");
   background-color: var(--quaternary-bg-color);
 }
 
 .art {
-  background-image: url("./assets/AfricanArtbg.svg");
+  background-image: url("./assets/africanartbg.svg");
   background-size: cover;
   background-position: center;
 }
