@@ -2,6 +2,7 @@ import { BsSearch } from "react-icons/bs";
 import solorcloud from "../../assets/solarcloudlineduotone.svg";
 import ambassador from "../../assets/freetrialambassador.svg";
 import graph from "../../assets/graphcharthistories.svg";
+import gcelogo from "../../assets/gcelogo.svg";
 
 const Dashboard = () => {
   type Exam = {
@@ -13,7 +14,7 @@ const Dashboard = () => {
   const examData: Exam[] = [
     {
       id: 1,
-      imgSrc: "/src/assets/gcelogo.svg",
+      imgSrc: gcelogo,
       title: "wassce/gce",
     },
     {
