@@ -3,7 +3,11 @@ import solorcloud from "../../assets/solarcloudlineduotone.svg";
 import ambassador from "../../assets/freetrialambassador.svg";
 import graph from "../../assets/graphcharthistories.svg";
 import gcelogo from "../../assets/gcelogo.svg";
-
+import postutmelogo from "../../assets/postutmelogo.svg";
+import jamblogo from "../../assets/jamblogo.svg";
+import nabteblogo from "../../assets/nabteblogo.svg";
+import juniorwaeclogo from "../../assets/juniorwaeclogo.svg";
+import necologo from "../../assets/necologo.svg";
 const Dashboard = () => {
   type Exam = {
     id: number;
@@ -19,27 +23,27 @@ const Dashboard = () => {
     },
     {
       id: 2,
-      imgSrc: "/src/assets/jamblogo.svg",
+      imgSrc: jamblogo,
       title: "jamb",
     },
     {
       id: 3,
-      imgSrc: "/src/assets/postutmelogo.svg",
+      imgSrc: postutmelogo,
       title: "post utme",
     },
     {
       id: 4,
-      imgSrc: "/src/assets/necologo.svg",
+      imgSrc: necologo,
       title: "neco",
     },
     {
       id: 5,
-      imgSrc: "/src/assets/nabteblogo.svg",
+      imgSrc: nabteblogo,
       title: "nabteb",
     },
     {
       id: 6,
-      imgSrc: "/src/assets/juniorwaeclogo.svg",
+      imgSrc: juniorwaeclogo,
       title: "bece (Junior waec)",
     },
   ];
