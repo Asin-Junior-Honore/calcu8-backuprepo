@@ -53,7 +53,7 @@ const SelectedExam = () => {
           ))}
         </span>
 
-        <span className="my-10 inline-block">
+        <span className="my-10 block lg:text-start text-center">
           <h2 className="text-[#A6A6A6] lg:text-3xl text-2xl">
             <strong className="uppercase text-primary-purple">
               {exam.title}
@@ -63,13 +63,13 @@ const SelectedExam = () => {
         </span>
 
         <div className="flex flex-col lg:flex-row lg:space-x-10 lg:space-y-0 space-y-10">
-          <span className="uppercase art text-black flex items-center rounded-xl px-8 py-4 bg-[#F3F3F3] space-x-3">
+          <span className="uppercase art text-black justify-center flex items-center rounded-xl px-8 py-4 bg-[#F3F3F3] space-x-8">
             <CiCircleQuestion size={35} strokeWidth={0.5} />
             <p className="text-primary-purple font-medium text-xl">
               questions : 40
             </p>
           </span>
-          <span className="uppercase art text-black flex items-center rounded-xl px-8 py-4 bg-[#F3F3F3] space-x-3">
+          <span className="uppercase art text-black flex items-center justify-center rounded-xl px-8 py-4 bg-[#F3F3F3] space-x-8">
             <MdOutlineTimer size={35} />
             <p className="text-primary-purple font-medium text-xl">
               time : 40 mins
