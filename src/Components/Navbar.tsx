@@ -72,16 +72,19 @@ const Navbar = () => {
             {/* User Profile Dropdown */}
             <div className="relative">
               <button
-                className="flex items-center text-white focus:outline-none"
+                className="flex items-center flex-row-reverse text-white focus:outline-none"
                 onClick={toggleUserDropdown}
               >
                 <img src={userImage} alt="User Profile" />
-                <BsFillCaretDownFill className="ml-1" />
+                <BsFillCaretDownFill
+                  className="mr-1 lg:inline-block hidden text-primary-black"
+                  size={20}
+                />
               </button>
 
               {/* User Dropdown Content */}
               {showUserDropdown && (
-                <div className="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded shadow-lg">
+                <div className="absolute z-10 right-0 mt-2 w-48 bg-white border border-gray-200 rounded shadow-lg">
                   <div className="p-2">
                     <p className="text-gray-800">User Name</p>
                     <p className="text-gray-600 text-sm">user@example.com</p>
