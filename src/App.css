@@ -68,7 +68,8 @@ body {
   background-color: var(--quaternary-bg-color);
 }
 
-.art {
+.art,
+.selected-exam {
   background-image: url("/src/assets/africanbg.svg");
   background-size: cover;
   background-position: center;

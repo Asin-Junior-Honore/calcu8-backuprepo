@@ -1,8 +1,10 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { BsFillCaretDownFill, BsList } from "react-icons/bs";
+import { BsFillCaretDownFill } from "react-icons/bs";
 import logo from "../assets/calcula8logo.svg";
 import userImage from "../assets/userimage.svg";
+import { CgMenuLeft } from "react-icons/cg";
+import { IoMdClose } from "react-icons/io";
 const Navbar = () => {
   const [showUserDropdown, setShowUserDropdown] = useState(false);
   const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -29,7 +31,7 @@ const Navbar = () => {
             <li>
               <NavLink
                 to="/"
-                className="block text-primary-black font-semibold py-2 px-4"
+                className="block text-primary-black font-semibold text-lg py-2 px-4"
               >
                 Dashboard
               </NavLink>
@@ -37,7 +39,7 @@ const Navbar = () => {
             <li>
               <NavLink
                 to="/exams"
-                className="block text-primary-black font-semibold py-2 px-4"
+                className="block text-primary-black font-semibold text-lg py-2 px-4"
               >
                 Exams
               </NavLink>
@@ -45,7 +47,7 @@ const Navbar = () => {
             <li>
               <NavLink
                 to="/history-scores"
-                className="block text-primary-black font-semibold py-2 px-4"
+                className="block text-primary-black font-semibold text-lg py-2 px-4"
               >
                 History & Scores
               </NavLink>
@@ -59,7 +61,11 @@ const Navbar = () => {
                 className="flex items-center px-3 py-2 border rounded text-gray-600 border-gray-400 hover:text-black hover:border-black"
                 onClick={toggleMobileMenu}
               >
-                <BsList size={24} />
+                {showMobileMenu ? (
+                  <IoMdClose size={24} />
+                ) : (
+                  <CgMenuLeft size={24} />
+                )}
               </button>
             </div>
 
@@ -103,7 +109,7 @@ const Navbar = () => {
                 <li>
                   <NavLink
                     to="/"
-                    className="block text-primary-black font-semibold py-2 px-4"
+                    className="block text-primary-black font-semibold text-lg py-2 px-4"
                     onClick={toggleMobileMenu}
                   >
                     Dashboard
@@ -112,7 +118,7 @@ const Navbar = () => {
                 <li>
                   <NavLink
                     to="/exams"
-                    className="block text-primary-black font-semibold py-2 px-4"
+                    className="block text-primary-black font-semibold text-lg py-2 px-4"
                     onClick={toggleMobileMenu}
                   >
                     Exams
@@ -121,7 +127,7 @@ const Navbar = () => {
                 <li>
                   <NavLink
                     to="/history-scores"
-                    className="block text-primary-black font-semibold py-2 px-4"
+                    className="block text-primary-black font-semibold text-lg py-2 px-4"
                     onClick={toggleMobileMenu}
                   >
                     History & Scores

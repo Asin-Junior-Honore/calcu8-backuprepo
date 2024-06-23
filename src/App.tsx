@@ -4,6 +4,7 @@ import Navbar from "./Components/Navbar";
 import Dashboard from "./Pages/Dashboard/Dashboard";
 import Exams from "./Pages/Exams/Exams";
 import History from "./Pages/HistoriesAndScores/History";
+import SelectedExam from "./Pages/SelectedExam/SelectedExam";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
               <Route path="/" element={<Dashboard />} />
               <Route path="/exams" element={<Exams />} />
               <Route path="/history-scores" element={<History />} />
+              <Route path="/selectedexam" element={<SelectedExam />} />
             </Routes>
           </section>
         </Router>

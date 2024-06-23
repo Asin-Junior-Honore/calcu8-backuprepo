@@ -1,52 +1,11 @@
 import { BsSearch } from "react-icons/bs";
 import solorcloud from "../../assets/solarcloudlineduotone.svg";
 import ambassador from "../../assets/freetrialambassador.svg";
+import { useNavigate } from "react-router-dom";
 import graph from "../../assets/graphcharthistories.svg";
-import gcelogo from "../../assets/gcelogo.svg";
-import postutmelogo from "../../assets/postutmelogo.svg";
-import jamblogo from "../../assets/jamblogo.svg";
-import nabteblogo from "../../assets/nabteblogo.svg";
-import juniorwaeclogo from "../../assets/juniorwaeclogo.svg";
-import necologo from "../../assets/necologo.svg";
+import { examData } from "../../utils/examData";
 const Dashboard = () => {
-  type Exam = {
-    id: number;
-    imgSrc: string;
-    title: string;
-  };
-
-  const examData: Exam[] = [
-    {
-      id: 1,
-      imgSrc: gcelogo,
-      title: "wassce/gce",
-    },
-    {
-      id: 2,
-      imgSrc: jamblogo,
-      title: "jamb",
-    },
-    {
-      id: 3,
-      imgSrc: postutmelogo,
-      title: "post utme",
-    },
-    {
-      id: 4,
-      imgSrc: necologo,
-      title: "neco",
-    },
-    {
-      id: 5,
-      imgSrc: nabteblogo,
-      title: "nabteb",
-    },
-    {
-      id: 6,
-      imgSrc: juniorwaeclogo,
-      title: "bece (Junior waec)",
-    },
-  ];
+  const navigate = useNavigate();
   return (
     <section>
       <div className="lg:p-8 p-4 africanart relative lg:h-96 flex justify-center flex-col">
@@ -115,7 +74,8 @@ const Dashboard = () => {
             {examData.map((exam) => (
               <div
                 key={exam.id}
-                className="bg-[#F3F3F3] py-12 px-5 space-y-8 rounded-xl flex flex-col items-center justify-center"
+                className="bg-[#F3F3F3] text-center cursor-pointer py-12 px-5 space-y-8 rounded-xl flex flex-col items-center justify-center"
+                onClick={() => navigate("/selectedexam", { state: { exam } })}
               >
                 <img src={exam.imgSrc} alt={exam.title} />
                 <h2 className="text-primary-black text-3xl font-medium uppercase">
