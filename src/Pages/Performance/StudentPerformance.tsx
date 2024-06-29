@@ -1,7 +1,7 @@
 import { BsSearch } from "react-icons/bs";
-import HistoryScorecard from "../../Components/HistoryCard";
+import { Analysis } from "../../Components/Analysis";
 
-const History = () => {
+const StudentPerformance = () => {
   return (
     <main>
       <div className="lg:p-8 p-4 africanart relative lg:h-96 flex justify-center flex-col">
@@ -19,10 +19,9 @@ const History = () => {
           </div>
         </div>
       </div>
-
-      <HistoryScorecard />
+      <Analysis />
     </main>
   );
 };
 
-export default History;
+export default StudentPerformance;

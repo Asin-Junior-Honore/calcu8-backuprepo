@@ -69,7 +69,9 @@ body {
 }
 
 .art,
-.selected-exam {
+.selected-exam,
+.quest-hover,
+.signin {
   background-image: url("/src/assets/africanbg.svg");
   background-size: cover;
   background-position: center;
@@ -81,3 +83,44 @@ body {
   color: var(--placeholder-color);
   padding-left: 4rem;
 }
+.progress {
+  /* border: 2px solid red; */
+  display: inline-block;
+  background-image: url("/src/assets/africanbg.svg");
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  height: 50px;
+}
+.progress::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100%;
+  z-index: -5;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 30px;
+  background-color: #46daa8;
+}
+.quest-hover:hover {
+  background-color: var(--secondary-bg-color);
+  color: var(--text-color);
+}
+
+.hide-now {
+  display: none;
+  /* display: block; */
+}
+
+/* hr{
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background-color: red;
+  background: blue;
+  color: #692e8a;
+} */
