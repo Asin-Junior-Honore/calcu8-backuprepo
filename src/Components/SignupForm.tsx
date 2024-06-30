@@ -10,7 +10,7 @@ const SignupForm = () => {
         >
           Username
         </label>
-        <div className="flex items-center  rounded-md p-2 bg-[#F3F3F3] pr-[6rem]">
+        <div className="flex items-center  rounded-md p-2 bg-[#F3F3F3] lg:pr-[6rem] pr-[3rem]">
           <FaUser className="text-primary-black mr-5" />
           <input
             type="text"
@@ -29,7 +29,7 @@ const SignupForm = () => {
         >
           Email
         </label>
-        <div className="flex items-center  rounded-md p-2 bg-[#F3F3F3] pr-[6rem]">
+        <div className="flex items-center  rounded-md p-2 bg-[#F3F3F3] lg:pr-[6rem] pr-[3rem]">
           <FaEnvelope className="text-primary-black mr-5" />
           <input
             type="email"
@@ -48,7 +48,7 @@ const SignupForm = () => {
         >
           Password
         </label>
-        <div className="flex items-center  rounded-md p-2 bg-[#F3F3F3] pr-[6rem]">
+        <div className="flex items-center  rounded-md p-2 bg-[#F3F3F3] lg:pr-[6rem] pr-[3rem]">
           <FaLock className="text-primary-black mr-5" />
           <input
             type="password"

@@ -15,7 +15,7 @@ export const NewpasswordForm = () => {
         >
           Password
         </label>
-        <div className="flex items-center rounded-md p-2 bg-[#F3F3F3] pr-[6rem]">
+        <div className="flex items-center rounded-md p-2 bg-[#F3F3F3]  lg:pr-[6rem] pr-[3rem]">
           <FaLock className="text-primary-purple mr-5" />
           <input
             type="password"
