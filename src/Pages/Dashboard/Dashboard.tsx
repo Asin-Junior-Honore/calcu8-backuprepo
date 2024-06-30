@@ -4,10 +4,15 @@ import ambassador from "../../assets/freetrialambassador.svg";
 import { useNavigate } from "react-router-dom";
 import graph from "../../assets/graphcharthistories.svg";
 import { examData } from "../../utils/examData";
+import Navbar from "../../Components/Navbar";
 const Dashboard = () => {
   const navigate = useNavigate();
   return (
     <section>
+      <section className="p-4 lg:py-4 lg:px-8">
+        <Navbar />
+        {/* write logic to display the navbar if user is authenticated or login */}
+      </section>
       <div className="lg:p-8 p-4 africanart relative lg:h-96 flex justify-center flex-col">
         <h2 className=" font-medium text-4xl leading-[56px] mb-6">
           Morning,{" "}

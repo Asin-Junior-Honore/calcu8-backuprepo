@@ -17,7 +17,7 @@ function App() {
     <main>
       <div>
         <Router>
-          <section className="p-4 lg:py-4 lg:px-8">
+          <section className="p-4 lg:py-4 lg:px-8 hidden">
             <Navbar />
             {/* write logic to display the navbar if user is authenticated or login */}
           </section>

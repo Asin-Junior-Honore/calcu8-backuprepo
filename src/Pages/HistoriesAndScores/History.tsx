@@ -1,9 +1,14 @@
 import { BsSearch } from "react-icons/bs";
 import HistoryScorecard from "../../Components/HistoryCard";
+import Navbar from "../../Components/Navbar";
 
 const History = () => {
   return (
     <main>
+      <section className="p-4 lg:py-4 lg:px-8">
+        <Navbar />
+        {/* write logic to display the navbar if user is authenticated or login */}
+      </section>
       <div className="lg:p-8 p-4 africanart relative lg:h-96 flex justify-center flex-col">
         <div className="text-center lg:my-0 my-8">
           <div className="relative lg:w-[724px] mx-auto ">

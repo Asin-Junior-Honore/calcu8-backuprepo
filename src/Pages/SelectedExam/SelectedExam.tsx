@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 import { years } from "../../utils/years";
 import { CiCircleQuestion } from "react-icons/ci";
 import { MdOutlineTimer } from "react-icons/md";
+import Navbar from "../../Components/Navbar";
 
 const SelectedExam = () => {
   const location = useLocation();
@@ -14,6 +15,10 @@ const SelectedExam = () => {
 
   return (
     <main>
+           <section className="p-4 lg:py-4 lg:px-8">
+            <Navbar />
+            {/* write logic to display the navbar if user is authenticated or login */}
+          </section>
       <div className="lg:p-8 p-4 africanart relative lg:h-96 flex justify-center flex-col">
         <div className="text-center lg:my-0 my-8">
           <div className="relative lg:w-[724px] mx-auto ">
