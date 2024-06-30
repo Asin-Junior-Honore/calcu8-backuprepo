@@ -61,7 +61,7 @@ const SignupForm = () => {
       </div>
 
       <button className="text-xl bg-primary-purple lg:w-auto w-full py-2 text-white art lg:px-20 px-8 rounded-xl font-semibold ">
-        Sign In
+        Sign Up
       </button>
     </form>
   );
